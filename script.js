@@ -34,6 +34,7 @@ squareRedShowText.appendChild(squareRedText);
 
 squareRedButton.addEventListener("click", function () {
     console.log("Button is clicked");
+    
     squareRedText.classList.toggle("hidden");
 })
 
