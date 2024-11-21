@@ -40,7 +40,7 @@ squareRedButton.addEventListener("click", function () {
 // Blue square
 const squareBlueShowImg = document.querySelector("#squareBlueShowImg");
 
-const squareBlueButton = document.querySelector("#squareGreenButton");
+const squareBlueButton = document.querySelector("#squareBlueButton");
 
 console.log(squareBlueShowImg, squareBlueButton);
 
@@ -49,10 +49,13 @@ const squareBlueImg = document.createElement("img");
 squareBlueImg.src = "hamburger.png";
 squareBlueImg.alt = "Hamburger icon";
 
+squareBlueImg.classList.add("hamburgerIcon");
+squareBlueImg.classList.add("hidden");
+
 squareBlueShowImg.appendChild(squareBlueImg);
 
 squareBlueButton.addEventListener("click", function () {
     console.log("Button is clicked!");
     
-    squareBlueShowImg.classList.toggle("hidden");
+    squareBlueImg.classList.toggle("hidden");
 });

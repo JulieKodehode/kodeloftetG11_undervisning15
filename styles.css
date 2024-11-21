@@ -75,6 +75,11 @@ section {
   display: none;
 }
 
+.hamburgerIcon {
+  height: 26px;
+  width: 26px;
+}
+
 /* FOOTER */
 footer {
   display: flex;
